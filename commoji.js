@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const commander = require('commander');
+const emojis = require("emojilib");
 
 commander
   .version('0.0.1')

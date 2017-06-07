@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "description": "git commit wrapper to support translation to emoji",
   "main": "commoji.js",
-  "bin" : {
-    "commoji" : "./commoji.js"
+  "bin": {
+    "commoji": "./commoji.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/gnitnuj/commoji#readme",
   "dependencies": {
-    "commander": "^2.9.0"
+    "commander": "^2.9.0",
+    "emojilib": "^2.2.1"
   }
 }
