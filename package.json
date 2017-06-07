@@ -26,6 +26,7 @@
   "homepage": "https://github.com/gnitnuj/commoji#readme",
   "dependencies": {
     "commander": "^2.9.0",
-    "emojilib": "^2.2.1"
+    "emojilib": "^2.2.1",
+    "lodash": "^4.17.4"
   }
 }

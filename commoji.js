@@ -2,6 +2,7 @@
 
 const commander = require('commander');
 const emojilib = require("emojilib");
+const _ = require("lodash");
 
 const SYMBOLS = '!"#$%&\'()*+,-./:;<=>?@[]^_`{|}~';
 const ALLTHEEMOJIS = emojilib.lib;
@@ -58,10 +59,39 @@ const getMeAnEmoji = (word) => {
   return (useful.length === 0) ? '' : useful[0];
 };
 
+/**
+ * Returns the emoji equivalent of an english sentence.
+ * @param {String} sentence to be translated
+ * @returns {String} the sentence with emojis instead of text
+ */
+const emojifySentence = (sentence) => {
+  let sentenceAsArray = _.words(sentence, /[^\s]+/g);
+
+  const emojifiedSentence = _.map(sentenceAsArray, (word) => {
+    // Punctuation blows. Get all the punctuation at the start and end of the word.
+    let firstSymbol = '';
+    let lastSymbol = '';
+
+    while (SYMBOLS.indexOf(word[0]) != -1) {
+      firstSymbol += word[0];
+      word = word.slice(1, word.length);
+    }
+
+    while (SYMBOLS.indexOf(word[word.length - 1]) != -1) {
+      lastSymbol += word[word.length - 1];
+      word = word.slice(0, word.length - 1);
+    }
+
+    return `${firstSymbol}${getMeAnEmoji(word)}${lastSymbol}`;
+  });
+
+  return emojifiedSentence.join(' ');
+};
+
 // COMMOJI
 commander
   .version('0.0.1')
   .option('-m, --message [message]', 'commits a message or single line')
   .parse(process.argv);
 
-console.log(getMeAnEmoji(commander.message));
+console.log(emojifySentence(commander.message));
