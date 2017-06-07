@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "git commit wrapper to support translation to emoji",
   "main": "commoji.js",
+  "bin" : {
+    "commoji" : "./commoji.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
