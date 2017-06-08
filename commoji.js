@@ -2,6 +2,7 @@
 
 const commander = require('commander');
 const emojilib = require("emojilib");
+const simpleGit = require('simple-git');
 const _ = require("lodash");
 
 const SYMBOLS = '!"#$%&\'()*+,-./:;<=>?@[]^_`{|}~';
@@ -94,4 +95,4 @@ commander
   .option('-m, --message [message]', 'commits a message or single line')
   .parse(process.argv);
 
-console.log(emojifySentence(commander.message));
+simpleGit().commit(emojifySentence(commander.message));

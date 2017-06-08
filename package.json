@@ -27,6 +27,7 @@
   "dependencies": {
     "commander": "^2.9.0",
     "emojilib": "^2.2.1",
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.4",
+    "simple-git": "^1.73.0"
   }
 }
