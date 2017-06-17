@@ -29,5 +29,10 @@
     "emojilib": "^2.2.1",
     "lodash": "^4.17.4",
     "simple-git": "^1.73.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.0.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.3.0"
   }
 }
