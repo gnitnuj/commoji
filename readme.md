@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/gnitnuj/commoji.svg?branch=master)](https://travis-ci.org/gnitnuj/commoji)
+
 # :sparkles: commoji :sparkles:
 
 You know how sometimes you write commits and it has all these letters and words and no emoji? Yeah, commoji fixes that.
