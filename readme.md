@@ -4,7 +4,7 @@ You know how sometimes you write commits and it has all these letters and words 
 
 ## mais pourquoi?
 - why **commoji**, and not **gitmoji**? it's obvi cooler... b/c [this](https://gitmoji.carloscuesta.me/) :angry:
-- why only `commoji -m 'emojify me'`... why no `commoji`?
+- why only `commoji -m 'emojify me'`... why no `commoji`? b/c an emoji is worth 100 words (at least), so if you need more than the 50 character subject line limit, you're obviously doing something wrong.
 
 ### Install
 - `git clone https://github.com/gnitnuj/commoji.git`
@@ -15,8 +15,7 @@ You know how sometimes you write commits and it has all these letters and words 
 `commoji -m 'omg!! this commit message is soooo fire. bomb dot com.'`
 
 The `commoji` cli current has 1 flag `-m`:
-  * b/c an emoji is worth 100 words (at least), so if you need more than the 50 character subject line limit, you're obviously doing something wrong. 5000+ characters? pourquoi?
-  * and b/c ain't nobody got time to reach feature parity with `git commit`
+  * b/c ain't nobody got time to reach feature parity with `git commit`
 
 ### Contributing
 - minimum 3 emojis per commit message... :angel: :ship: :unicorn:
