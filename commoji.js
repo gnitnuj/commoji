@@ -93,6 +93,9 @@ const emojifySentence = (sentence) => {
   return emojifiedSentence.join(' ');
 };
 
+module.exports.getMeAnEmoji = getMeAnEmoji;
+module.exports.emojifySentence = emojifySentence;
+
 // COMMOJI
 commander
   .version('0.0.1')
