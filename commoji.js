@@ -14,7 +14,7 @@ const ALLTHEEMOJIS = emojilib.lib;
  * @returns {String} The emoji character representing this word, or '' if one doesn't exist.
  */
 const getMeAnEmoji = (w) => {
-  // code below is 70% yoinked from notwaldorf
+  // code below is somewhat yoinked from notwaldorf
   // https://github.com/notwaldorf/emoji-translate
 
   const word = w.trim().toLowerCase();
@@ -92,6 +92,9 @@ const emojifySentence = (sentence) => {
 
   return emojifiedSentence.join(' ');
 };
+
+module.exports.getMeAnEmoji = getMeAnEmoji;
+module.exports.emojifySentence = emojifySentence;
 
 // COMMOJI
 commander
