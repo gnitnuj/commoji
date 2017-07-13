@@ -1,13 +1,13 @@
 {
   "name": "commoji",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "git commit wrapper to support translation to emoji",
   "main": "commoji.js",
   "bin": {
     "commoji": "./commoji.js"
   },
   "scripts": {
-    "test": "no testing framework :("
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -34,6 +34,7 @@
   "devDependencies": {
     "eslint": "^4.0.0",
     "eslint-config-airbnb-base": "^11.2.0",
-    "eslint-plugin-import": "^2.3.0"
+    "eslint-plugin-import": "^2.3.0",
+    "jest": "^20.0.4"
   }
 }
