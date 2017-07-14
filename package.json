@@ -1,6 +1,6 @@
 {
   "name": "commoji",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "git commit wrapper to support translation to emoji",
   "main": "commoji.js",
   "bin": {
