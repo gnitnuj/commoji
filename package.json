@@ -7,7 +7,8 @@
     "commoji": "./commoji.js"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "cover": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "repository": {
     "type": "git",
@@ -32,9 +33,11 @@
     "simple-git": "^1.73.0"
   },
   "devDependencies": {
+    "coveralls": "^2.13.1",
     "eslint": "^4.0.0",
     "eslint-config-airbnb-base": "^11.2.0",
     "eslint-plugin-import": "^2.3.0",
+    "istanbul": "^0.4.5",
     "jest": "^20.0.4"
   }
 }
