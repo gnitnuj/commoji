@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/gnitnuj/commoji.svg?branch=master)](https://travis-ci.org/gnitnuj/commoji)
+[![Coverage Status](https://coveralls.io/repos/github/gnitnuj/commoji/badge.svg?branch=feature%2Fcoveralls)](https://coveralls.io/github/gnitnuj/commoji?branch=feature%2Fcoveralls)
 
 # :sparkles: commoji :sparkles:
 
